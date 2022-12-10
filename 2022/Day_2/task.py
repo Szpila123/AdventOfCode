@@ -19,7 +19,7 @@ move_lookup = {
     ('B', 'Z'): 'Z',
     ('C', 'X'): 'Y',
     ('C', 'Y'): 'Z',
-    ('C', 'Z'): 'X' 
+    ('C', 'Z'): 'X'
 
 }
 
@@ -30,11 +30,5 @@ with open('input.txt') as file:
         sum_1 += match_results[(opponent, player)]
         sum_2 += match_results[(opponent, move_lookup[(opponent, player)])]
 
-
-
-
-    
-
 print(sum_1)
 print(sum_2)
-
